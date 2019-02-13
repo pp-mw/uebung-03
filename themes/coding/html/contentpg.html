@@ -1,0 +1,565 @@
+<!doctype html>
+<html class="no-js" lang="de" data-path="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGSV</title>
+  <link rel="stylesheet" href="css/template.min.css">
+  <script src="js/svg4everybody.min.js"></script>
+</head>
+
+<body class="">
+
+  <div class="outer">
+    <ul id="skiplinks">
+      <li><a class="show-on-focus" href="#main-menu">Zum Hauptmenü</a></li>
+      <li><a class="show-on-focus" href="#search">Zur Suche</a></li>
+      <li><a class="show-on-focus" href="#content">Zum Inhalt</a></li>
+      <li><a class="show-on-focus" href="#footer">Zu den Service-Informationen</a></li>
+    </ul>
+    <header class="expanded row fluid-header">
+      <div class="header row">
+        <a class="logo" href="#">
+          <img  src="img/agsv-logo.svg" alt="AGSV Logo">
+        </a>
+        <span>
+          Arbeitsgemeinschaft der Schwerbehindertenvertretungen <br>der obersten Landesbehörden des Freistaates Bayern
+        </span>
+      </div>
+    </header>
+
+    <!-- Service Navigation -->
+    <div class="header-bar row">
+      <div class="mobile-buttons">
+        <button class="toggle menu-button" data-for="menu-main" title="Menü ein-/ausblenden" type="button" aria-haspopup="true" aria-expanded="false">
+            <span class="menu-button-box">
+              <span class="menu-button-inner"></span>
+            </span>
+            <span class="menu-button-label hide-for-small-only">Menü</span>
+          </button>
+      </div>
+
+      <nav class="service-menu">
+        <ul id="service-nav">
+          <li id="style-control">
+            <span>Darstellung:</span>
+            <a href="#" id="style-normal"><svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#darstellung1"></use></svg><span>normal</span></a>
+            <a href="#" id="style-contrast">
+            <span>Kontrast</span>
+            </a>
+          </li>
+          <li>
+            <!-- Search button -->
+            <button class="toggle search-button" data-for="searching" title="Suche ein-/ausblenden" type="button" aria-haspopup="true" aria-expanded="false">
+              <a href="#"><svg role="img" class="symbol" aria-hidden="true" focusable="false">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#search-blue"></use>
+              </svg></a>
+            </button>
+            <!-- End Search Button -->
+          </li>
+          <li><a href="#"><svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#phone-blue"></use></svg></a></li>
+
+          <li>
+            <!-- Login Button -->
+            <button class="toggle login-button" data-for="login" title="Login ein-/ausblenden" type="button" aria-haspopup="true" aria-expanded="false">
+              <a href="#"><svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#login-blue"></use>
+              </svg></a>
+            </button>
+            <!-- End Login Button -->
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End Service Navigation -->
+    <div class="content row">
+      <nav class="nav-main">
+        <ul id="menu-main" class="menu-main">
+          <li><a href="#">Wir über Uns <i class="s_icon"><svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#plus"></use></svg></i></a></li>
+          <li><a href="#">Aktuelles</a></li>
+          <li class="active has-sub"><a href="#">Tipps und Hinweise <i class="s_icon"><svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xlink:href="/img/icons.svg#plus"></use></svg></i></a>
+            <ul class="sub-container">
+              <li><a href="#">Informationen für behinderte und schwerbehinderte Menschen</a></li>
+              <li><a href="#">Informationen für behinderte und schwerbehinderte Menschen</a></li>
+              <li><a href="#">Informationen für behinderte und schwerbehinderte Menschen</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Recht <i class="s_icon"><svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#plus"></use></svg></i></a></li>
+          <li><a href="#">Formulare und Anträge</a></li>
+          <li><a href="#">Termine</a></li>
+          <li><a href="#">Literatur und Broschüren <i class="s_icon"><svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#plus"></use></svg></i></a></li>
+          <li><a href="#">Ressorts und Ansprechpartner</a></li>
+          <li><a href="#">Links</a></li>
+          <li><a href="#">Archiv</a></li>
+        </ul>
+      </nav>
+      <!-- End Hauptnavigation -->
+
+      <!-- Content -->
+      <main class="">
+
+        <!-- Beginn Suche -->
+        <div role="search" class="search-bar" id="searching">
+          <form action="" method="post">
+            <div class="searchrow">
+              <input type="text" class="searchinput" placeholder="Suchbegriff eingeben..." title="Suchbegriff eingeben" />
+              <input type="submit" class="btn-senden">
+            </div>
+            <button typ="submit" class="btn btn-cancel">Abrechen</button>
+          </form>
+        </div>
+        <!-- End Suche -->
+
+        <!-- LOG IN -->
+        <div id="login">
+          <form action="" method="post">
+            <div class="userlogin">
+              <label>Benutzer</label>
+              <input type="text" title="Benutzer eingeben" />
+            </div>
+            <div class="userpass">
+              <label>Passwort</label>
+              <input type="text" title="Passwort eingeben" />
+            </div>
+            <button typ="submit" class="btn btn-login">Login</button>
+          </form>
+        </div>
+        <!-- END LOG IN -->
+
+    <div id="contentpg"><!-- Open Inhaltsseite -->
+        <div id="breadcrumb">
+          <span class="show-for-sr">Sie befinden sich hier: </span>
+          <ul itemprop="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+              <meta itemprop="position" content="1"><span itemprop="name">
+                <a href="#">Startseite</a></span></li>
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+              <meta itemprop="position" content="1"><span itemprop="name">
+                <a href="#">Literatur und Broschüren</a></span></li>
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+              <meta itemprop="position" content="1"><span itemprop="name">
+                <a href="#" class="active">Fachzeitschriften, Bücher, Broschüren</a></span></li>
+          </ul>
+        </div>
+        <!-- Teaster -->
+        <section class="teasertext">
+          <h1 class="teaser_head">Fachzeitschriften, Bücher, Broschüren</h1>
+          <p>Wir bemühen uns, die Links auf dem aktuellen Stand zu halten.
+            Bitte haben Sie jedoch Verständnis, wenn der Anbieter seine Webseite verändert.
+            Für entsprechende Hinweise sind wir jederzeit dankbar.</p>
+
+          <div class="teaser_icons">
+            <a href="#" class="pdf"><svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#pdf1"></use></svg><span>PDF-Datei</span></a>
+            <a href="#" class="ext_link"><svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#link1"></use></svg><span>Externer Link</span></a>
+            <a href="#" class="infos"><svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#infos1"></use></svg><span>Weitere Informationen</span>
+            </a>
+          </div>
+        </section>
+        <!-- End Teaser -->
+
+        <!-- Accordion Inhaltsseite -->
+        <section class="accordion js">
+          <article class="a_item" id="ac-1">
+
+            <h2 class="a_header">ABC Behinderung & Beruf
+
+              <div class="acc_circle">
+                <a href="#" class="infos2">
+                  <svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#infos2"></use></svg>
+                </a>
+              </div>
+            </h2>
+
+            <div class="a_content">
+              <div class="a_inner">
+                <h3>ABC Behinderung & Beruf</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">Cum sociis natoque penatibus</a> et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                  sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="a_item" id="ac-2">
+
+            <h2 class="a_header">Arbeitsrecht
+
+              <div class="acc_circle">
+                <a href="#" class="links2">
+                  <svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#link2"></use></svg>
+                </a>
+              </div>
+            </h2>
+
+            <div class="a_content">
+              <div class="a_inner">
+                <h3>Arbeitsrecht</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">Cum sociis natoque penatibus</a> et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                  sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="a_item" id="ac-3">
+
+            <h2 class="a_header">Barrierefreies Bauen -
+                                  01 Öffentlich zugängliche
+                                  Gebäude
+              <div class="acc_circle">
+                <a href="#" class="links2">
+                  <svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#link2"></use></svg>
+                </a>
+              </div>
+            </h2>
+
+            <div class="a_content">
+              <div class="a_inner">
+                <h3>Barrierefreies Bauen - 01 Öffentlich zugängliche Gebäude</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">Cum sociis natoque penatibus</a> et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                  sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="a_item" id="ac-4">
+
+            <h2 class="a_header">Barrierefreies Bauen -
+                                  02 Barrierefreie
+                                  Wohnungen
+
+              <div class="acc_circle">
+                <a href="#" class="links2">
+                  <svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#link2"></use></svg>
+                </a>
+              </div>
+
+            </h2>
+
+            <div class="a_content">
+              <div class="a_inner">
+                <h3>Barrierefreies Bauen - 02 Barrierefreie Wohnungen</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">Cum sociis natoque penatibus</a> et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                  sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="a_item" id="ac-5">
+
+            <h2 class="a_header">Behindertenrecht
+
+              <div class="acc_circle">
+                <a href="#" class="infos2">
+                  <svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#infos2"></use></svg>
+                </a>
+              </div>
+            </h2>
+
+            <div class="a_content">
+              <div class="a_inner">
+
+              <div class="flex-container">
+                  <div class="a_image">
+                    <a href="#" class="sampleimg">
+                      <svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#sample_image"></use></svg>
+                    </a>
+                  </div>
+
+                  <div class="a_text">
+                    <!-- <h3>Behindertenrecht</h3> -->
+                    <p>
+                      Richard Boorberg Verlag
+                      GmbH & Co KG
+                    </p>
+                    <p>ISSN 0341-3888</p>
+                    <p>Preis: 93,80 EUR jährlich
+                      einschl. Versandkosten</p>
+                    <p>Erscheinungsweise: alle 2 Monate,
+                      zusätzlich 1 Themenheft
+                      im Frühjahr</p>
+                    <p>Fachzeitschrift für Fragen der
+                      Rehabilitation. Unter Mitwirkung der
+                      Bundesarbeitsgemeinschaft der
+                      Integrationsämter und Hauptfürsorge-
+                      stellen mit besonderer Berücksichti-
+                      gung des Schwerbehindertenrechts.
+                      Beiträge u. a.: Vertrauenspersonen
+                      fragen, Aus der Rechtsprechung,
+                      Aktuelles</p>
+                    <p>Beitrag von Heidi Stuffer</p>
+                  </div><!-- /.a_text -->
+                </div><!-- /.flex-container -->
+
+              </div><!-- /.a_inner -->
+            </div><!-- /.a_content -->
+          </article>
+
+          <article class="a_item" id="ac-6">
+
+            <h2 class="a_header">Betriebliches Eingliederungsmanagement
+                                - Handlungsempfehlungen
+
+              <div class="acc_circle">
+                <a href="#" class="links2">
+                  <svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#link2"></use></svg>
+                </a>
+              </div>
+            </h2>
+
+            <div class="a_content">
+              <div class="a_inner">
+                <h3>Betriebliches Eingliederungsmanagement - Handlungsempfehlungen</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">Cum sociis natoque penatibus</a> et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                  sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="a_item" id="ac-7">
+
+            <h2 class="a_header">Betriebliches Eingliederungsmanagement
+                                  nach dem SGB IX
+
+              <div class="acc_circle">
+                <a href="#" class="links2">
+                  <svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#link2"></use></svg>
+                </a>
+              </div>
+
+              <a href="#" class="accordion_links">Zentrum Bayern Familie und Soziales</a>
+            </h2>
+
+            <div class="a_content">
+              <div class="a_inner">
+                <h3>Betriebliches Eingliederungsmanagement nach dem SGB IX</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">Cum sociis natoque penatibus</a> et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                  sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="a_item" id="ac-8">
+
+            <h2 class="a_header">Beamtenversorgung (Rechtsstand März 2016)
+
+              <div class="acc_circle">
+                <a href="#" class="pdfs2">
+                  <svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#pdf2"></use></svg>
+                </a>
+              </div>
+            </h2>
+
+            <div class="a_content">
+              <div class="a_inner">
+                <h3>Beamtenversorgung (Rechtsstand März 2016)</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">Cum sociis natoque penatibus</a> et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                  sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="a_item" id="ac-9">
+
+            <h2 class="a_header">Das Allgemeine Gleichbehandlungsgesetz (AGG)
+
+              <div class="acc_circle">
+                <a href="#" class="infos2">
+                  <svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#infos2"></use></svg>
+                </a>
+              </div>
+            </h2>
+
+            <div class="a_content">
+              <div class="a_inner">
+                <h3>Das Allgemeine Gleichbehandlungsgesetz (AGG)</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">Cum sociis natoque penatibus</a> et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                  sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="a_item" id="ac-10">
+
+            <h2 class="a_header">Das trägerübergreifende
+                                  Persönliche Budget -
+                                  Einfache Sprache (Flyer)
+
+              <div class="acc_circle">
+                <a href="#" class="links2">
+                    <svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#link2"></use></svg>
+                </a>
+              </div>
+
+            </h2>
+
+            <div class="a_content">
+              <div class="a_inner">
+                <h3>Das trägerübergreifende Persönliche Budget - Einfache Sprache (Flyer)</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">Cum sociis natoque penatibus</a> et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                  sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="a_item" id="ac-11">
+
+            <h2 class="a_header">Die barrierefreie Gemeinde
+
+              <div class="acc_circle">
+                <a href="#" class="pdfs2">
+                  <svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#pdf2"></use></svg>
+                </a>
+              </div>
+            </h2>
+
+            <div class="a_content">
+              <div class="a_inner">
+                <h3>Die barrierefreie Gemeinde</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">Cum sociis natoque penatibus</a> et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                  sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="a_item" id="ac-12">
+
+            <h2 class="a_header">Themenheft
+                                "Das Wir gewinnt"
+
+              <div class="acc_circle">
+                <a href="#" class="links2">
+                  <svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#link2"></use></svg>
+                </a>
+              </div>
+            </h2>
+
+            <div class="a_content">
+              <div class="a_inner">
+                <h3>Themenheft "Das Wir gewinnt"</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">Cum sociis natoque penatibus</a> et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                  sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="a_item" id="ac-13">
+
+            <h2 class="a_header">Der besondere Kündigungsschutz
+
+              <div class="acc_circle">
+                <a href="#" class="links2">
+                  <svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#link2"></use></svg>
+                </a>
+              </div>
+            </h2>
+
+            <div class="a_content">
+              <div class="a_inner">
+                <h3>Der besondere Kündigungsschutz</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">Cum sociis natoque penatibus</a> et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                  sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="a_item" id="ac-14">
+
+            <h2 class="a_header">Der große Ratgeber für
+                                Behinderte und Pflegebedürftige
+
+              <div class="acc_circle">
+                <a href="#" class="infos2">
+                  <svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#infos2"></use></svg>
+                </a>
+              </div>
+            </h2>
+
+            <div class="a_content">
+              <div class="a_inner">
+                <h3>Der große Ratgeber für Behinderte und Pflegebedürftige</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">Cum sociis natoque penatibus</a> et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                  sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="a_item" id="ac-15">
+
+            <h2 class="a_header">Die Praxis der Schwerbehindertenvertretung
+                                  von A bis Z
+
+              <div class="acc_circle">
+                <a href="#" class="infos2">
+                  <svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#infos2"></use></svg>
+                </a>
+              </div>
+            </h2>
+
+            <div class="a_content">
+              <div class="a_inner">
+                <h3>Die Praxis der Schwerbehindertenvertretung von A bis Z</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">Cum sociis natoque penatibus</a> et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                  sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- End Accordion Inhaltsseite -->
+
+    </main>
+  </div>
+  <!-- End Content -->
+  </div><!-- End Inhaltsseite -->
+
+  <!-- Footer -->
+  <footer class="expanded row">
+    <nav class="footer-menu">
+      <ul id="footer-nav">
+        <li>
+          <a href="">Kontakt</a>
+        </li>
+        <li>
+          <a href="">Impressum</a>
+        </li>
+        <li>
+          <a href="">Datenschutz</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+  <!-- End Footer -->
+
+  </div>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
