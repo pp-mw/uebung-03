@@ -11,10 +11,101 @@
 </head>
 
 <body class="">
-
   <div class="outer">
-    
-
+    <header class="header page-wrap">
+      <div class="logo">
+        <a href=""><img src="img/logo.svg" alt=""></a>
+      </div>
+      <picture class="hero">
+        <source media="(min-width: 320px)" srcset="img/hero_768.jpg 1x">
+        <source media="(min-width: 768px)" srcset="img/hero_1440.jpg 1x">
+        <img src="img/hero_1440.jpg" class="img-full" alt="">
+      </picture>
+      <div class="nav-bar">
+        <nav class="main-nav">
+          <button class="menu-button toggle" data-for="main-menu" title="Menü ein-/ausblenden" aria-haspopup="true" aria-expanded="false">
+            <span class="menu-button-label">Menü</span>
+            <i class="s-icon">
+              <svg role="img" class="symbol" aria-hidden="true" focusable="false">
+                <use xlink:href="img/icons.svg#icon-menu"></use>
+              </svg>
+            </i>
+          </button>
+          <ul id="main-menu">
+            <li class="orange"><a href="">Link 1</a></li>
+            <li class="rose"><a href="">Link 2</a></li>
+            <li class="blue"><a href="">Link 3</a></li>
+            <li class="beige"><a href="">Link 4</a></li>
+            <li class="red"><a href="">Link 5</a></li>
+            <li class="turquoise"><a href="">Link 6</a></li>
+          </ul>
+        </nav>
+        <nav class="lang-nav">
+          <ul id="lang-menu">
+            <li><a href="">EN</a></li>
+            <li><a href="">DE</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main page-wrap">
+      <a class="fb" href=""><img src="img/icons.svg#icon-fb" alt=""></a>
+      <div class="section tile-items">
+        <article class="tile-item head-ttl orange">
+          <a href="" class="t-link">
+            <h2></h2>
+            <span class="ttl"></span>
+            <p></p>
+          </a>
+        </article>
+        <article class="tile-item head">
+          <a href="" class="t-link">
+            <h2></h2>
+            <span class="ttl"></span>
+            <p></p>
+          </a>
+        </article>
+        <article class="tile-item head">
+          <a href="" class="t-link">
+            <h2></h2>
+            <span class="ttl"></span>
+            <p></p>
+          </a>
+        </article>
+        <article class="tile-item head-ttl turquoise">
+          <a href="" class="t-link">
+            <h2></h2>
+            <span class="ttl"></span>
+            <p></p>
+          </a>
+        </article>
+        <article class="tile-item head-ttl rose">
+          <a href="" class="t-link">
+            <h2></h2>
+            <span class="ttl"></span>
+            <p></p>
+          </a>
+        </article>
+        <article class="tile-item head-ttl">
+          <a href="" class="t-link">
+            <h2></h2>
+            <span class="ttl"></span>
+            <p></p>
+          </a>
+        </article>
+      </div>
+      <div class="quote">
+        <blockquote>
+          <p></p>
+          <footer></footer>
+        </blockquote>
+      </div>
+    </main>
+    <footer class="footer page-wrap">
+      <div class="section">
+        <a href="">Impressum</a>
+      </div>
+    </footer>
   </div>
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="js/app.js"></script>

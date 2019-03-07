@@ -43,14 +43,14 @@
 @import 'util/util';
 
 //Fließtext
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 
 
 // 1. Global
 // ---------
 
 $global-font-size: 112.5%;
-$global-width: rem-calc(1680);
+$global-width: rem-calc(1440);
 $global-lineheight: 1.8;
 $foundation-palette: (
   primary: #2199e8,
@@ -71,8 +71,7 @@ $contrast-orange: #F9A251;
 $light-blue: #e4f2fa;
 $body-background: $white;
 $body-font-color: $dark-gray;
-$body-font-family: 'Roboto', sans-serif;
-$body-alternate-font-family: 'Roboto Condensed', sans-serif;
+$body-font-family: 'Noto Sans', sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -93,7 +92,7 @@ $breakpoints: (
   medium: 640px,
   large: 768px,
   xlarge: 1024px,
-  xxlarge: 1280px,
+  xxlarge: 1440px,
 );
 $breakpoint-classes: (small medium large xlarge xxlarge);
 
@@ -109,7 +108,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-alternate-font-family;
+$header-font-family: $body-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;

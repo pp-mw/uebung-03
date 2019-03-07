@@ -1,6 +1,6 @@
 @echo off
 if exist node_modules (
-gulp
+gulp --env wp
 ) else (
 echo Projekt nicht ordnungsgemaess eingerichtet!
 pause

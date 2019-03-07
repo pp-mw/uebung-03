@@ -15,8 +15,8 @@ var knownOptions = {
 var options = minimist(process.argv.slice(2), knownOptions);
 
 var sassPaths = [
-  'bower_components/foundation-sites/scss',
-  'bower_components/motion-ui/src'
+  'node_modules/foundation-sites/scss',
+  'node_modules/motion-ui/src'
 ];
 
 function swallowError (error) {
@@ -68,7 +68,7 @@ gulp.task('minify-js', function() {
 gulp.task('serve', function() {
   if (options.env === 'wp') {
     browserSync.init({
-      proxy: "localhost/agsv"
+      proxy: "localhost/bbsb"
     });
   } else if (options.env === 'nb') {
     // browserSync disabled
@@ -76,8 +76,9 @@ gulp.task('serve', function() {
     browserSync.init({
       server: {
         baseDir: "./html",
+        directory: true,
         routes: {
-          "/bower_components": "bower_components",
+          "/node_modules": "node_modules",
           "/js": "js",
           "/img": "img",
           "/css": "css"
